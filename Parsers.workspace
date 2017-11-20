@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Parsers">
+		<Project filename="Util\Utilities.cbp" />
+		<Project filename="Config\Config.cbp" active="1">
+			<Depends filename="Util\Utilities.cbp" />
+		</Project>
+		<Project filename="Config\test\TestConfig.cbp">
+			<Depends filename="Util\Utilities.cbp" />
+			<Depends filename="Config\Config.cbp" />
+		</Project>
+		<Project filename="Xml\Xml.cbp">
+			<Depends filename="Util\Utilities.cbp" />
+		</Project>
+		<Project filename="Xml\Tester\TestXml.cbp">
+			<Depends filename="Util\Utilities.cbp" />
+			<Depends filename="Xml\Xml.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

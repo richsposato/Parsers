@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Utilities" />
+		<Option pch_mode="2" />
+		<Option compiler="cygwin" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\lib\Utilities_D" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\" />
+				<Option type="2" />
+				<Option compiler="cygwin" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="..\.." />
+					<Add directory="..\..\boost_1_33_1" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\lib\Utilities" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="cygwin" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-O2" />
+					<Add option="-O1" />
+					<Add option="-O" />
+					<Add option="-Wall" />
+					<Add directory="..\.." />
+					<Add directory="..\..\boost_1_33_1" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include\ErrorReceiver.hpp" />
+		<Unit filename="include\ParseInfo.hpp" />
+		<Unit filename="include\ParseUtil.hpp" />
+		<Unit filename="include\TestUtil.hpp" />
+		<Unit filename="include\TypeDefs.hpp" />
+		<Unit filename="src\ErrorReceiver.cpp" />
+		<Unit filename="src\ParseInfo.cpp" />
+		<Unit filename="src\ParseUtil.cpp" />
+		<Unit filename="src\TestUtil.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

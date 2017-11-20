@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Xml" />
+		<Option pch_mode="2" />
+		<Option compiler="cygwin" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\lib\XmlParser_D" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\" />
+				<Option type="2" />
+				<Option compiler="cygwin" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="..\.." />
+					<Add directory="..\..\boost_1_33_1" />
+					<Add directory="..\..\loki\include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\lib\XmlParser" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="cygwin" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-O2" />
+					<Add option="-O1" />
+					<Add option="-O" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="..\.." />
+					<Add directory="..\..\boost_1_33_1" />
+					<Add directory="..\..\loki\include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include\Receivers.hpp" />
+		<Unit filename="include\XmlParser.hpp" />
+		<Unit filename="src\BasicParsers.cpp" />
+		<Unit filename="src\BasicParsers.hpp" />
+		<Unit filename="src\CommonInfo.cpp" />
+		<Unit filename="src\CommonInfo.hpp" />
+		<Unit filename="src\PrologParsers.cpp" />
+		<Unit filename="src\PrologParsers.hpp" />
+		<Unit filename="src\Receivers.cpp" />
+		<Unit filename="src\XmlParser.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
